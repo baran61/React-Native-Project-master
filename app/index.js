@@ -14,6 +14,7 @@ const Home = () => {
     const router = useRouter();
     const [searchTerm, setsearchTerm] = useState("");
     const [appIsReady, setAppIsReady] = useState(false);
+    const [filteredTexts, setFilteredTexts] = useState(texts);
 
   useEffect(() => {
     async function prepare() {
